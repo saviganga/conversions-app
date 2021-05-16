@@ -1,0 +1,20 @@
+{% extends 'app/base.html' %}
+
+{% block title %} Temperature Converter {% endblock %}
+
+{% block body %}
+
+    <h1>Celcius to Fahrenheit</h1>
+
+     <form action="{% url 'temperature' %}" method="get">
+        <input name="query" type="text" placeholder="Celcius">
+        <br>
+        <button type="submit" name="button">Convert</button>
+    </form>
+    <br><br>
+
+    <p> Celcius: {{celcius_value}}C </p><br>
+    <p> Fahrenheit: {{fahrenheit_value}}F </p><br>
+
+    <a href="{% url 'home' %}"> Home </a>
+{% endblock %}

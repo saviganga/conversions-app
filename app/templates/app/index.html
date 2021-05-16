@@ -1,0 +1,18 @@
+{% extends 'app/base.html' %}
+
+{% block title %} Home {% endblock %}
+
+{% block body %}
+
+    <h1> HOME </h1><br><br>
+
+    <p> Functions </p><br>
+
+    <ul>
+        <li>
+            <a href="{% url 'temperature' %}">Celcius to Fahrenheit</a>
+        </li>
+    </ul>
+
+{% endblock %}
+    
