@@ -1,10 +1,10 @@
 version: 2
 
-# define jobs for the bild server
+# define jobs for the build server
 jobs:
   build:
 
-    # build a docker image with pythn3 and circleci installed
+    # build a docker image with python3 and circleci installed
     docker:
       - image: circleci/python:3.8
 
@@ -28,3 +28,6 @@ jobs:
           command: |
             . venv/bin/activate
             python manage.py test
+            python manage.py makemigrations
+            python manage.py migrate
+            python manage.py runserver
