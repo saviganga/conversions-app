@@ -21,4 +21,4 @@ USAGE
 
 UP NEXT
 
-1. Continuous Integration Pipeline setup using CicleCI
+1. Continuous Integration Pipeline setup using CircleCI
