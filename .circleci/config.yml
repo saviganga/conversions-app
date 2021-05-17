@@ -1,0 +1,30 @@
+version: 2
+
+# define jobs for the bild server
+jobs:
+  build:
+
+    # build a docker image with pythn3 and circleci installed
+    docker:
+      - image: circleci/python:3.8
+
+    working_directory: ~/app
+
+    # steps to perform in the terminal of the container
+    steps:
+      - checkout
+
+      # create a virtual environment
+      - run:
+          name: install dependencies
+          command: |
+            python3 -m venv venv
+            . venv/bin/activate
+            pip install -r requirements.txt
+
+      # run tests
+      - run:
+          name: running tests
+          command: |
+            . venv/bin/activate
+            python manage.py test
