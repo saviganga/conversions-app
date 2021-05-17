@@ -21,6 +21,10 @@ jobs:
             python3 -m venv venv
             . venv/bin/activate
             pip install -r requirements.txt
+          environment:
+            SECRET_KEY: SECRET_KEY
+            DEBUG: DEBUG
+            ALLOWED_HOSTS: ALLOWED_HOSTS
 
       # run tests
       - run:
