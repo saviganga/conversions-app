@@ -12,7 +12,7 @@ def celciusTOfahrenheit(request):
 
     template = 'app/cf.html'
     
-    celcius_value = float(request.GET.get('query', False))
+    celcius_value = float(request.GET.get('c_value', False))
     fahrenheit_value = (celcius_value * 9/5) + 32 
 
     context = {'celcius_value': celcius_value, 'fahrenheit_value': fahrenheit_value}

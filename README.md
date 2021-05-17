@@ -8,3 +8,17 @@ Unit tests to confirm the proper working of different functions in the code base
 The app is then packaged using a docker container to allow for easy setting up without dependency issues
 
 a circleci build is set up to implement automatic tests and build of the codebase
+
+USAGE
+
+1. Clone the repository in a virtual environment
+
+2. Install docker (if you have docker, skip this step)
+
+3. in your terminal, run the command "docker compose up"
+- this builds a container of the project with all its dependencies in your local computer
+
+
+UP NEXT
+
+1. Continuous Integration Pipeline setup using CicleCI
