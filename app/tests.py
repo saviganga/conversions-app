@@ -9,8 +9,13 @@ class TemperatureTestCase(TestCase):
     def setup(self):
         self.client = Client()
 
-    # test status code for celcius to fahrenheit conversion
-    def test_celciusTOfahrenheit_statuscode(self):
-        resp = self.client.get('/temp/')
+    # tests for index view
+    def test_index_view(self):
+        resp = self.client.get('/')
         self.assertEqual(resp.status_code, 200)
 
+    # tests for CelciustoFahrenheit view
+    def test_celciusTOfahrenheit_view(self):
+        resp = self.client.get('/temp/', {'c_value': 100})
+        self.assertEqual(resp.status_code, 200)
+        self.assertContains(resp, 212)
