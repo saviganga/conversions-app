@@ -1,3 +1,5 @@
+[![saviganga](https://circleci.com/gh/saviganga/conversions-app.svg?style=svg)](https://circleci.com/gh/saviganga/conversions-app)
+
 In this repository, we set up a simple application Coninuous Integration Pipeline using CircleCI. 
 There will be subsequent updates to implement Continuous Development to achieve the full CI/CD pipeline functionalities .
 
@@ -21,12 +23,12 @@ USAGE
 
 UP NEXT
 
-1. Continuous Integration Pipeline setup using CircleCI
+1. Continuous Integration Pipeline setup using CircleCI (done)
+
+2. Extend pipeline to realize full CI/CD functionalities
 
 
-CONTINUOUS INTEGRATION BADGE
 
-[![saviganga](https://circleci.com/gh/saviganga/conversions-app.svg?style=svg)](https://circleci.com/gh/saviganga/conversions-app)
 
 
 
