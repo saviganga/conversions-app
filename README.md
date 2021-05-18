@@ -22,3 +22,11 @@ USAGE
 UP NEXT
 
 1. Continuous Integration Pipeline setup using CircleCI
+
+
+CONTINUOUS INTEGRATION BADGE
+
+[![saviganga](https://circleci.com/gh/saviganga/conversions-app.svg?style=svg)](https://circleci.com/gh/saviganga/conversions-app)
+
+
+
