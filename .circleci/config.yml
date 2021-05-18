@@ -34,3 +34,6 @@ jobs:
             python manage.py test
             python manage.py makemigrations
             python manage.py migrate
+
+      - store_test_results:
+          path: ~/app/test-results
