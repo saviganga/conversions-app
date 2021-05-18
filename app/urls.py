@@ -3,5 +3,6 @@ from . import views
 
 urlpatterns = [
     path('', views.index, name='home'),
-    path('temp/', views.celciusTOfahrenheit, name='temperature'),
+    path('temp/c_to_f', views.celciusTOfahrenheit, name='c-to-f'),
+    path('temp/f-to-c', views.fahrenheitTOcelcius, name='f-to-c')
 ]

@@ -17,4 +17,13 @@ def celciusTOfahrenheit(request):
 
     context = {'celcius_value': celcius_value, 'fahrenheit_value': fahrenheit_value}
     return render(request, template, context)
-    
+
+def fahrenheitTOcelcius(request):
+
+    template = 'app/fc.html'
+
+    fahrenheit_value = float(request.GET.get('f_value', False))
+    celcius_value = round((fahrenheit_value - 32) * 5/9, 2)
+
+    context = {'fahrenheit_value': fahrenheit_value, 'celcius_value': celcius_value}
+    return render(request, template, context)
