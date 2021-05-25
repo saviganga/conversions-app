@@ -10,7 +10,6 @@ workflows:
       - build
       - heroku/deploy-via-git:
           app-name: $STAGING_ENV
-          SECRET_KEY: $SECRET_KEY
 
           requires:
             - build
