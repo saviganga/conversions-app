@@ -1,1 +1,1 @@
-web: gunicorn dailypytips.wsgi --log-file -
+web: gunicorn converterapp.wsgi --log-file -
