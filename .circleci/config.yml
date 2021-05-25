@@ -1,5 +1,6 @@
 version: 2.1
 
+# heroku orb for deployment automation
 orbs:
   heroku: circleci/heroku@1.2.6
 
